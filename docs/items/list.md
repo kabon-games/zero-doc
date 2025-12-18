@@ -8,7 +8,7 @@ sidebar_position: 1
 
 * [backpack](/docs/items/backpack)
 * [barrel](/docs/items/barrel)
-* [craf table](/docs/items/craft_table)
+* [craft table](/docs/items/craft_table)
 * [dirt](/docs/items/dirt)
 * [sieve](/docs/items/sieve)
 * [silk worm](/docs/items/silk_worm)
