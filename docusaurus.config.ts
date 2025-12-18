@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Zero',
+  tagline: 'A small sandbox world',
+  favicon: 'img/icon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -41,25 +41,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -75,7 +56,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -85,13 +66,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          label: 'Wiki',
         },
       ],
     },
@@ -102,8 +77,8 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'wiki',
+              to: '/docs/home',
             },
           ],
         },
@@ -111,34 +86,17 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'bluesky',
+              href: 'https://bsky.app/profile/pebloop.dev',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'website',
+              href: 'https://pebloop.dev',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Zero, Inc.`,
     },
     prism: {
       theme: prismThemes.github,
